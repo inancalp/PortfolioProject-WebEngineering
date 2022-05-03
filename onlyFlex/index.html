@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- EITHER THIS 3 LINKS FOR THE FONT OR THE IMPORT LINK IN STYLES.CSS -->
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website INDEX</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <script>
+        function callImages(){
+            someVibesLength = 110; //lenght of some-vibes folder
+        showPhotos = "";
+        photosDiv = document.getElementById("photosDiv");
+        for (i=1; i <= someVibesLength; i++) {
+            showPhotos += `<img class="someVibes" src="../some-vibes-resized/IMG (${i}).jpg" alt="IMG (${i})"/>`;
+        }
+        photosDiv.innerHTML = showPhotos;
+        }
+    </script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    
+    <script>
+        $(document).ready(function(){
+            
+            $(".someVibes").click(function(){
+                var path = $(this).attr("src"); //assigning path
+                $("#large-someVibes").attr("src", path); //manipulating path
+                $("#photos-popUp").fadeIn();
+                i++;
+            })
+
+            $("#close-popUp").click(function(){
+                $("#photos-popUp").fadeOut();
+            })
+        })
+    </script>   
+</head>
+<body onLoad="callImages()">
+    <div class="wrapper">
+        <header>
+            <div class="header-wrapper">
+                <div class="title">
+                    <img class="title-logo" src="studyon.png" alt="studyon">
+                    <a class="title-name" href="#" rel="home">Inanc Alp Gunalp</a>
+                </div>
+                <div class="flex-navbar">
+                    <div class="flex-navbar-item mainpage">
+                        <!-- will direct to index page -->
+                        <a href="#">Main Page</a>
+                    </div>
+                    <div class="flex-navbar-item projectpage">
+                        <!-- will direct to index page -->
+                        <a href="#">Project Page</a>
+                    </div>
+                    <div class="flex-navbar-item resumepage">
+                        <!-- will direct to index page -->
+                        <a href="#">Resume Page</a>
+                    </div>        
+                    <div class="flex-navbar-item contactpage">
+                        <!-- will direct to index page -->
+                        <a href="#">Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!-- POPUP! -->
+            <div id="photos-popUp">
+                <button id="close-popUp">X</button>
+                <br>
+                <br>
+                <img id="large-someVibes" src="" alt="">
+            </div>
+            <div class="flex-content">
+                <div class="flex-content-item flex-content-item-left">
+                    <p>Hello it's Inanc.</p>
+                    <p>Want to be able to use the power of the code;</p>
+                    <p>To achieve,</p>
+                    <p>To create,</p>
+                    <p>To express,</p>
+                    <p>To self-express,</p>
+                    <p>To tell a story,</p>
+                    <p>To show a story,</p>
+                    <p>To talk,</p>
+                    <p>To listen,</p>
+                    <p>To be listened,</p>
+                    <p>To wake up for it,</p>
+                    <p>To sleep with it,</p>
+                    <p>To love every piece of it,</p>
+                    <p>To love,</p>
+                    <p>To breathe,</p>
+                    <p>And everything else!</p>
+                    <h4>But most importantly,</h4>
+                    <h5>To feel free!</h5>   
+                </div>
+                <div id="photosDiv" class="flex-content-item flex-content-item-right">    
+                </div>
+            </div>  
+        </section>
+
+        <footer>
+                <div class="footer-container text">
+                    <p>Hello, World!</p>
+                </div>
+        </footer>
+
+    </div>
+    
+</body>
+</html>

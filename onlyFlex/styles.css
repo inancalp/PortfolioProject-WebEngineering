@@ -1,0 +1,200 @@
+
+
+/* ---- MAIN-START ---- */
+
+* {
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; 
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+header {
+    position: sticky;
+    top: 8px;
+}
+
+div{
+    margin: 4px;
+    /* why does body does not work properly ? */
+    /* background-color: lightblue; */ 
+}
+
+a{  
+    transition: all 0.3s ease 0s;
+}
+
+a:hover{
+    color: lightskyblue;
+}
+
+.wrapper{
+    /* border: 2px black solid; */
+    max-width: 1200px;
+    margin: auto;
+    /* HEADER BACKGROUN COLOR STAYS WHITE */
+    /* background-color: lightseagreen; */
+}
+
+/* ---- MAIN-END---- */
+
+
+/* ---- HEADER-START ---- */
+
+.header-wrapper{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+    .title-name{
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .title-logo{
+        border-radius:50%;
+        width: 60px;
+    }
+
+
+.flex-navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+    .flex-navbar a{
+    font-size: 13px;
+    }   
+
+.flex-navbar-item{
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+
+/* ---- HEADER-END ---- */
+
+/* ---- CONTENT-START ---- */
+
+.flex-content{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+    margin: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.flex-content-item{
+    border: 1px solid black;
+    padding: 10px;
+    margin: 30px;
+}
+
+.flex-content-item-left{
+    top:220px;
+    background-color: lightgrey;
+    height: fit-content;
+    flex-grow: 1; 
+}
+
+    .flex-content-item-left p, h4, h5{
+        background-color: lightgrey;
+        text-align: center;
+    } 
+    .flex-content-item-left h5{
+        font-size: larger;
+        font-weight: bolder;
+    } 
+
+    
+.flex-content-item-right{
+
+    /* Used for centering the photos */
+    background-color: lightgrey;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-grow: 2;
+
+}
+
+.photosDiv{
+    padding: 30px;
+}
+
+.someVibes{
+    cursor: pointer;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 90%;
+    height: 90%;
+    max-width: 480px;
+    /* max-height: 480px; */
+    /* max-width:100%; */
+    /* object-fit: fill; */
+    border: 5px solid black;
+}
+
+.footer-container{
+    border: 1px solid black;
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+
+#photos-popUp{
+    
+    width:880px;
+    max-height: 99%;
+    max-width: 96%;
+    border: 1px black solid;
+    /* border-radius: 25px; */
+    background-color: lightblue;
+    padding: 10px;
+    margin:10px;
+    
+    text-align: center;
+
+    box-sizing: border-box;
+    position: fixed;
+    top: 57%;
+    left: 48.8%;
+    
+    transform: translate(-50%, -50%);
+    /* z-index: 1000; */
+    display: none;
+
+}
+
+#photos-popUp img{
+    width: 90%;
+    height: 90%;
+    max-height: 660px;
+    border: 10px solid rgb(0, 0, 0);
+    border-radius: 25px;
+    /* padding-bottom: ; */
+    margin-bottom: 20px;
+}
+
+
+#close-popUp{
+    cursor: pointer;
+}
+
+

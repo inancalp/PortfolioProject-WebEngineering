@@ -25,6 +25,7 @@
         photosDiv.innerHTML = showPhotos;
         }
     </script>
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     
     <script>
@@ -43,18 +44,21 @@
         })
     </script>   
 </head>
+
+
+
 <body onLoad="callImages()">
     <div class="wrapper">
         <header>
             <div class="header-wrapper">
                 <div class="title">
-                    <img class="title-logo" src="studyon.png" alt="studyon">
+                    <img class="title-logo" src="studyon.svg" alt="studyon">
                     <a class="title-name" href="#" rel="home">Inanc Alp Gunalp</a>
                 </div>
                 <div class="flex-navbar">
                     <div class="flex-navbar-item mainpage">
                         <!-- will direct to index page -->
-                        <a href="#">Main Page</a>
+                        <a href="index.html">Main Page</a>
                     </div>
                     <div class="flex-navbar-item projectpage">
                         <!-- will direct to index page -->
@@ -66,22 +70,24 @@
                     </div>        
                     <div class="flex-navbar-item contactpage">
                         <!-- will direct to index page -->
-                        <a href="#">Contact Page</a>
+                        <a href="contact.html">Contact Page</a>
                     </div>
                 </div>
             </div>
         </header>
         <section>
-            <!-- POPUP! -->
+            <!-- POPUP! -START- -->
             <div id="photos-popUp">
-                <button id="close-popUp">X</button>
-                <br>
-                <br>
-                <img id="large-someVibes" src="" alt="">
+                <div id="inner-photos-popUp">
+                    <p><button id="close-popUp">X</button></p>
+                    <p><img id="large-someVibes" src="" alt=""></p>
+                </div>
             </div>
+            <!-- POPUP!-END- -->
             <div class="flex-content">
                 <div class="flex-content-item flex-content-item-left">
-                    <p>Hello it's Inanc.</p>
+                    <h5>Hello, World!</h5>
+                    <h4><p>It's Inanc.</p></h4>
                     <p>Want to be able to use the power of the code;</p>
                     <p>To achieve,</p>
                     <p>To create,</p>
@@ -94,19 +100,20 @@
                     <p>To be listened,</p>
                     <p>To wake up for it,</p>
                     <p>To sleep with it,</p>
-                    <p>To love every piece of it,</p>
+                    <p>To love every single line of it,</p>
                     <p>To love,</p>
                     <p>To breathe,</p>
                     <p>And everything else!</p>
                     <h4>But most importantly,</h4>
-                    <h5>To feel free!</h5>   
+                    <h5>To feel free!</h5>
+                    <p style="font-size: 10px;"><b>PS:</b> Only borders that I like can be found in this Website.</p>
                 </div>
                 <div id="photosDiv" class="flex-content-item flex-content-item-right">    
                 </div>
             </div>  
         </section>
 
-        <footer>
+        <footer style="font-size:larger;font-weight:bolder;text-align:center;">
                 <div class="footer-container text">
                     <p>Hello, World!</p>
                 </div>

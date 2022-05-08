@@ -1,0 +1,168 @@
+
+* {
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; 
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+.wrapper{
+    /* border: 2px black solid; */
+    max-width: 1200px;
+    margin: auto;
+    /* HEADER BACKGROUN COLOR STAYS WHITE */
+    /* background-color: lightseagreen; */
+}
+header {
+    position: relative;
+    top: 8px;
+}
+
+div{
+    margin: 4px;
+    /* why does body does not work properly ? */
+    /* background-color: lightblue; */ 
+}
+
+a{  
+    transition: all 0.3s ease 0s;
+}
+
+a:hover{
+    color: lightskyblue;
+}
+
+
+.footer-container{
+    border: 1px solid black;
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-wrapper{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+    .title-name{
+        font-size: 24px;
+        margin-left: 10px;
+    }
+
+    .title-logo{
+        border-radius:50%;
+        width: 60px;
+    }
+
+
+.flex-navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+    .flex-navbar a{
+    font-size: 13px;
+    }   
+
+.flex-navbar-item{
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+
+/* CONTENT */
+
+.flex-resume-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 94%;
+    height: fit-content;
+    margin: auto;
+    margin-top: 14px;
+    margin-bottom: 14px;
+    /* background-color: lightgray; */
+}
+
+    .flex-resume{
+        /* border: 1px solid black; */
+        width: fit-content;
+        /* width: auto; */
+        height: fit-content;
+    }
+
+        .description{
+            margin: 40px;
+            margin-top: 20px;
+            margin-bottom: 10px;
+            flex-basis: 0;
+            flex-grow: 1;
+            /* background-color: lightblue; */
+        }   
+            .description img{
+                border-radius: 50%;
+                border: 1px solid black;
+                /* padding: 10px; */
+                margin-top: 32px;
+                /* margin-left: 20px; */
+                margin-right: 30px;
+                /* margin-right: 40px; */
+                /* margin-top: 50px; */
+                width: 140px;
+                float: left;
+            }
+            .description p{
+                /* max-width: 90%; */
+                /* max-height: 80%; */
+                /* height: fit-content; */
+                line-height: 200%;
+                /* padding: 4px; */
+                margin: 30px;
+                font-size:small;
+            }
+        
+        .details{
+            width: 95%;
+            flex-basis: 0;
+            flex-grow: 3;
+            margin-top: 10px;
+            margin-bottom: 20px;
+            line-height: 1.6;
+            /* padding: 50px; */
+            /* background-color: lightcyan; */
+        }   
+            .details h1{
+                /* border: 1px solid black; */
+                width: fit-content;
+                padding-left:8px;
+                font-weight: bolder;
+            }
+            .details p{
+                font-size: smaller;
+                padding: 8px;
+                /* max-width: 400px; */
+            }
+
+            .edu{
+                float: right; 
+                /* border: 1px solid black; */
+                margin: 30px;
+                padding: 8px;
+            }
+

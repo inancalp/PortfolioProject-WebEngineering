@@ -8,54 +8,42 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="stylesContact.css">
-     <script>
-        // function validateForm() {
-        //     var yourName = document.forms["yourForm"]["yourName"];
-        //     let yourEmail = document.forms["yourForm"]["yourEmail"];
-        //     let yourPhone = document.forms["yourForm"]["yourPhone"];
-        //     let yourMessage = document.forms["yourForm"]["yourMessage"];
+    <script>
 
-            
-        //     if (yourName.value == "") {
-        //         console.log(yourName.placeholde);
-        //         alert("YOWW!!");
-        //         return false;
-        //     }
-        // }   
-        
         function validateForm() {
             var yourName = document.getElementById("contact-field-name");
             var yourEmail = document.getElementById("contact-field-email");
             var yourPhone = document.getElementById("contact-field-phone");
             var yourMessage = document.getElementById("contact-field-textarea");
+            var inputName = document.getElementById("input-name");
+            var inputEmail = document.getElementById("input-email");
+            var inputMessage = document.getElementById("contact-field-textarea");
+
             if(yourName.value == ""){
+                inputName.style.backgroundColor = "red";
                 yourName.placeholder = "PLEASE ENTER YOUR NAME";
                 return false;
             }
             if(yourEmail.value == ""){
+                inputEmail.style.backgroundColor = "red";
                 yourEmail.placeholder = "PLEASE ENTER YOUR E-MAIL";
                 return false;
             }
             if(yourMessage.value == ""){
+                inputMessage.style.borderColor = "red";
                 yourMessage.placeholder = "PLEASE ENTER YOUR MESSAGE";
                 return false;
             }
-            if(yourPhone.value == ""){
-                yourEmail.placeholder = yourPhone.value;
-                return false;
-            }
-        
         }  
 
-     </script>
+    </script>
 </head>
 <body>
-    <div class="wrapper-content">
+    <div class="wrapper">
         <header>
             <div class="header-wrapper">
                 <div class="title">
-                    <img class="title-logo" src="studyon.png" alt="studyon">
-                    <a class="title-name" href="#" rel="home">Inanc Alp Gunalp</a>
+                    <a class="title-name" href="index.html" rel="home">Inanc Alp Gunalp</a>
                 </div>
                 <div class="flex-navbar">
                     <div class="flex-navbar-item mainpage">
@@ -73,12 +61,12 @@
                 </div>
             </div>
         </header>
-        <section>
+        <main>
             <div class="flex-contact">
                 <div class="flex-contact-item left">
                     <div class="left-phone">
                         <p class="contact-caption">Phone</p>
-                        <p>+32 456 218 591</p>
+                        <p>+32 456 218 XXX</p>
                     </div> 
                     <hr>
                     <div class="left-address">
@@ -101,39 +89,29 @@
 
 
                      <!--FORM -start- -->
-                    <form name="yourForm" onsubmit="return validateForm()" action="mailto:inangunalp@gmail.com" method="post">
+                    <form name="yourForm" onsubmit="return validateForm()" action="mailto:inangunalp@gmail.com?subject=Contact" method="post" enctype="text/plain">
                         <div class="right-caption">
                             <p>Contact Me!</p>
                         </div>
-                        <div class="right-input">
+                        <div class="right-input" id="input-name">
                             <input name="yourName" id="contact-field-name" class="contact-field" type="text" placeholder="Your Name">
                         </div>
-                        <div class="right-input">
+                        <div class="right-input" id="input-email">
                             <input name="yourEmail" id="contact-field-email" class="contact-field" type="email" placeholder="Your E-Mail">
                         </div>
                         <div class="right-input">
                             <input name="yourPhone" id="contact-field-phone" class="contact-field" type="tel" placeholder="Your Phone">
                         </div>
                         <div class="right-input-textarea">
-                            <textarea name="yourMessage" id="contact-field-textarea" class="contact-field" name="contact-message" placeholder="Your Message" rows="12"></textarea>
+                            <textarea name="yourMessage" id="contact-field-textarea" class="contact-field" placeholder="Your Message" rows="12"></textarea>
                         </div>
-                        <input id="submit-button" class="contact-field" type="submit" name="submit" value="SUBMIT">
+                        <input id="submit-button" class="contact-field" type="submit" name="submit">
                     </form>
                     <!--FORM  -end- -->
 
                 </div>
             </div>  
-        </section>
-
-        <footer>
-            <div class="footer-container text">
-                <p style="font-size:larger;font-weight:bolder;text-align:center;">
-                    Hello, World!
-                </p>
-            </div>
-        </footer>
-
+        </main>
     </div>
-    
 </body>
 </html>

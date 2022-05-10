@@ -1,5 +1,5 @@
 
-* {
+*{
     background-color: whitesmoke;
     font-family: "Montserrat", sans-serif;
     font-weight: bold; 
@@ -7,22 +7,20 @@
     color: black;
     text-decoration: none;
 }
+
 .wrapper{
-    /* border: 2px black solid; */
     max-width: 1200px;
+    min-width: 900px;
     margin: auto;
-    /* HEADER BACKGROUN COLOR STAYS WHITE */
-    /* background-color: lightseagreen; */
 }
+
 header {
     position: relative;
     top: 8px;
 }
 
 div{
-    margin: 4px;
-    /* why does body does not work properly ? */
-    /* background-color: lightblue; */ 
+    margin: 4px; 
 }
 
 a{  
@@ -40,6 +38,7 @@ a:hover{
     padding-top: 0;
     padding-bottom: 0;
 }
+
 .header-wrapper{
     background-color: lightblue;
     border: 1px solid black;
@@ -55,13 +54,9 @@ a:hover{
 }
 
     .title-name{
-        font-size: 24px;
-        margin-left: 10px;
-    }
-
-    .title-logo{
-        border-radius:50%;
-        width: 60px;
+        font-size: 36px;
+        margin:15px;
+        /* margin-left: 10px; */
     }
 
 
@@ -72,15 +67,17 @@ a:hover{
     padding: 4px;
 }
 
+    .flex-navbar-item{
+        border: 1px solid black;
+        padding: 4px;
+        text-align: center;
+    }
+
     .flex-navbar a{
     font-size: 13px;
     }   
 
-.flex-navbar-item{
-    border: 1px solid black;
-    padding: 4px;
-    text-align: center;
-}
+
 
 
 /* CONTENT */
@@ -91,21 +88,14 @@ a:hover{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* border: 1px solid black; */
     width: 94%;
-    height: fit-content;
     margin: auto;
-    margin-top: 14px;
-    margin-bottom: 14px;
-    /* background-color: lightgray; */
-}
+    margin-top: 48px;
+    margin-bottom: 48px;
 
-    .flex-resume{
-        /* border: 1px solid black; */
-        width: fit-content;
-        /* width: auto; */
-        height: fit-content;
-    }
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px;
+}
 
         .description{
             margin: 40px;
@@ -117,7 +107,7 @@ a:hover{
         }   
             .description img{
                 border-radius: 50%;
-                border: 1px solid black;
+                border: 3px solid black;
                 /* padding: 10px; */
                 margin-top: 32px;
                 /* margin-left: 20px; */
@@ -153,10 +143,15 @@ a:hover{
                 padding-left:8px;
                 font-weight: bolder;
             }
-            .details p{
+            .details li{
                 font-size: smaller;
-                padding: 8px;
+                padding-bottom: 4px;
                 /* max-width: 400px; */
+            }
+            .details .caption{
+                font-style: italic;
+                font-size:small;
+                padding-top: 4px;
             }
 
             .edu{

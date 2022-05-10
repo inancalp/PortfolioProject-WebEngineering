@@ -1,0 +1,247 @@
+
+
+* {
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; 
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1200px;
+    min-width: 900px;
+    margin: auto;
+}
+header {
+    position: relative;
+    top: 8px;
+}
+
+div{
+    margin: 4px;
+}
+
+a{  
+    transition: all 0.3s ease 0s;
+}
+
+a:hover{
+    color: lightskyblue;
+}
+
+.footer-container{
+    margin-top: 36px;
+    margin-bottom: 24px;
+}
+
+.header-wrapper{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 4px;
+}
+
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    padding: 10px;
+}
+
+    .title-name{
+        font-size: 36px;
+        margin: 15px;
+    }
+
+
+.flex-navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px;
+}
+    .flex-navbar-item{
+        border: 1px solid black;
+        padding: 4px;
+        text-align: center;
+    }
+    
+    .flex-navbar a{
+    font-size: 13px;
+    }   
+
+    
+
+
+
+
+/* PROJECT */
+
+.flex-project{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+    margin: 20px;
+    margin-top: 36px;
+    margin-right: 100px;
+    margin-left: 100px;
+
+    box-shadow: 10px 10px 10px;
+    border:1px solid black;
+    
+    background-image: linear-gradient( rgba(193, 221, 230, 0.8), rgba(185, 219, 230, 0.8)), url(images/logo2.svg);
+    background-position: 52% 0;
+    background-attachment: fixed;
+}
+
+    .flex-project-item{
+        margin: 36px;
+    }
+
+        .bigLogo{
+            width: 116%;
+            margin-top: 24px;
+
+            border: 2px solid black;
+            box-shadow: 5px 5px 20px;
+        }
+            .bigLogo img{
+                margin-left: 5%;
+                width: 90%
+            }
+
+
+        .description{
+            display: flex;
+            justify-content: center;
+
+            width: 90%;
+            padding: 14px;
+            line-height: 140%;
+
+            border:2px solid black;
+            box-shadow: 5px 5px 20px;
+            
+            background-image: linear-gradient( rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9)), url(images/logo2.svg);
+            
+        }
+            .inner-description{
+                min-width: 128%;
+                height: fit-content;
+                margin: 44px;
+                padding: 22px;
+                border: 2px solid black;
+                box-shadow: 5px 5px 20px;
+            }
+                .inner-description p{
+                    margin-bottom: 24px;
+                }
+                .inner-description li{
+                    margin-bottom: 4px;
+                }
+
+                .features{
+                    /* border:1px solid black; */
+                    list-style: none;
+                    margin-top: 24px;
+                    margin-right: 24px;
+                }
+
+                .features-captions{
+                    text-decoration: underline;
+                }
+
+                .credits{
+                    border: 1px solid black;
+                    box-shadow: 1px 1px 1px;
+                    margin: 8px;
+                    padding: 8px;
+                    float: right;
+                }
+
+
+
+        .slideshow{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            width: 144%;
+        }
+
+            .slider{
+                display: flex;
+                justify-content: center;
+
+                width: 82%;
+                padding: 1px;
+
+                outline: black solid 4px;
+                border: 4px solid black;
+                border-radius: 10px;
+                
+                box-shadow: 5px 5px 20px;
+            }
+
+                .slider img{
+                    width: 100%;
+                }
+
+                    .slider img.notActive{
+                        display: none;
+                    }
+
+                    .slider img.active{
+                        display: flex;
+                    }
+
+                .button{
+                    z-index: 1000;
+                    position: relative;
+                    padding: 4px;
+                    cursor: pointer;
+                    border: 2px solid black;
+                    background-color: lightblue;
+                    border-radius: 25px;
+                }
+
+                    .left{
+                        left: 90px;
+                    }
+
+                    .right{
+                        right:90px;
+                    }
+
+                .prev, .next{
+                    cursor: pointer;
+                    font-size: 28px;
+                    border-radius: 25px;
+                    background-color: whitesmoke;
+                    transition: all 0.3s ease 0s;
+                }
+                
+                    .prev:hover, .next:hover{
+                        color: lightskyblue;
+                    }
+
+        .blockdiagram{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+
+            border:2px solid black;
+            box-shadow: 5px 5px 20px;
+            background-image: linear-gradient( rgba(245, 245, 245, 0.9), rgba(245, 245, 245, 0.9)), url(images/logo2.svg);
+        }
+        
+            .blockdiagram img{
+                width: 130%;
+                margin: 44px;
+
+                border: 2px solid black;
+                box-shadow: 5px 5px 20px;
+            }

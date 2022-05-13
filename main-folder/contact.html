@@ -5,11 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website CONTACT</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="stylesContact.css">
     <script>
-
         function validateForm() {
             var yourName = document.getElementById("contact-field-name");
             var yourEmail = document.getElementById("contact-field-email");
@@ -18,24 +15,40 @@
             var inputName = document.getElementById("input-name");
             var inputEmail = document.getElementById("input-email");
             var inputMessage = document.getElementById("contact-field-textarea");
+            var i = 0;
 
             if(yourName.value == ""){
                 inputName.style.backgroundColor = "red";
                 yourName.placeholder = "PLEASE ENTER YOUR NAME";
-                return false;
+                i = 1;
+            }
+            if(yourName.value != ""){
+                inputName.style.backgroundColor = "lightblue";
+                i = 0;
             }
             if(yourEmail.value == ""){
                 inputEmail.style.backgroundColor = "red";
                 yourEmail.placeholder = "PLEASE ENTER YOUR E-MAIL";
-                return false;
+                i = 1;
+            }
+            if(yourEmail.value != ""){
+                inputEmail.style.backgroundColor = "lightblue";
+                i = 0;
             }
             if(yourMessage.value == ""){
                 inputMessage.style.borderColor = "red";
                 yourMessage.placeholder = "PLEASE ENTER YOUR MESSAGE";
+                i = 1;
+            }
+            if(yourMessage.value != ""){
+                inputMessage.style.borderColor = "lightblue";
+                i = 0;
+            }
+            if(i == 1){
+                i = 0;
                 return false;
             }
         }  
-
     </script>
 </head>
 <body>
@@ -85,10 +98,8 @@
                         <a href="#">- LinkedIn</a>
                     </div> 
                 </div>
-                <div class="flex-contact-item right">   
-
-
-                     <!--FORM -start- -->
+                <div class="flex-contact-item right">  
+                     <!--FORM-->
                     <form name="yourForm" onsubmit="return validateForm()" action="mailto:inangunalp@gmail.com?subject=Contact" method="post" enctype="text/plain">
                         <div class="right-caption">
                             <p>Contact Me!</p>
@@ -107,8 +118,7 @@
                         </div>
                         <input id="submit-button" class="contact-field" type="submit" name="submit">
                     </form>
-                    <!--FORM  -end- -->
-
+                    <!---->
                 </div>
             </div>  
         </main>

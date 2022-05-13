@@ -1,19 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- EITHER THIS 3 LINKS FOR THE FONT OR THE IMPORT LINK IN STYLES.CSS -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website INDEX</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="stylesIndex.css">
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script>
         function callImages(){
             someVibesLength = 102;
@@ -25,9 +18,6 @@
         photosDiv.innerHTML = showPhotos;
         }
     </script>
-    
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    
     <script>
         $(document).ready(function(){
             
@@ -43,9 +33,6 @@
         });
     </script>   
 </head>
-
-
-
 <body onLoad="callImages()">
     <div class="wrapper">
         <header>
@@ -55,34 +42,29 @@
                 </div>
                 <div class="flex-navbar">
                     <div class="flex-navbar-item mainpage">
-                        <!-- will direct to index page -->
                         <a href="index.html">Main Page</a>
                     </div>
                     <div class="flex-navbar-item projectpage">
-                        <!-- will direct to index page -->
                         <a href="project.html">Project Page</a>
                     </div>
                     <div class="flex-navbar-item resumepage">
-                        <!-- will direct to index page -->
                         <a href="resume.html">Resume Page</a>
                     </div>        
                     <div class="flex-navbar-item contactpage">
-                        <!-- will direct to index page -->
                         <a href="contact.html">Contact Page</a>
                     </div>
                 </div>
             </div>
         </header>
         <main>
-            <!-- POPUP! -START- -->
+            <!--POPUP!-->
             <div id="photos-popUp">
                 <div id="inner-photos-popUp">
                     <p><button id="close-popUp">X</button></p>
-                    <!-- <p id="someParagh"></p> -->
                     <p id="someParagh"></p>
                 </div>
             </div>
-            <!-- POPUP!-END- -->
+            <!---->
             <div class="flex-content">
                 <div class="flex-content-item flex-content-item-left">
                     <h5>Hello, World!</h5>

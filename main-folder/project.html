@@ -1,26 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- EITHER THIS 3 LINKS FOR THE FONT OR THE IMPORT LINK IN STYLES.CSS -->
-    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> -->
-
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio Website PROJECT</title>
-
-    <!-- CSS -->
     <link rel="stylesheet" href="stylesProject.css">
-    
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
-
     <script>
         $(document).ready(function(){
-            
-
             $(".next").on("click", function(){
                 var currentImg = $(".active");
                 var nextImg = currentImg.next();
@@ -33,7 +21,6 @@
                     nextImg.addClass("active");
                 }
             });
-
             $(".prev").on("click", function(){
                 var currentImg = $(".active");
                 var prevImg = currentImg.prev();
@@ -46,8 +33,7 @@
                     prevImg.addClass("active");
                 }
             });
-        })
-        
+        })   
     </script>
 </head>
 <body>
@@ -118,7 +104,6 @@
                     </div>
                 </div>
                 <!-- jQuery SLIDESHOW -->
-
                 <div class="flex-project-item slideshow">
                     <div class="button left"><button class="prev" >&lt;&lt;</button></div>
                     <div class="slider">
@@ -137,7 +122,6 @@
                     </div>
                     <div class="button right"><button class="next" >>></button></div>
                 </div>
-
                 <!---->
                 <div class="flex-project-item blockdiagram">
                     <img src="images/0-BlockDiagram.png" alt="">

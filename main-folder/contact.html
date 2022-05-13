@@ -15,7 +15,7 @@
             var inputName = document.getElementById("input-name");
             var inputEmail = document.getElementById("input-email");
             var inputMessage = document.getElementById("contact-field-textarea");
-            var i = 0;
+            var i;
 
             if(yourName.value == ""){
                 inputName.style.backgroundColor = "red";
@@ -24,7 +24,6 @@
             }
             if(yourName.value != ""){
                 inputName.style.backgroundColor = "lightblue";
-                i = 0;
             }
             if(yourEmail.value == ""){
                 inputEmail.style.backgroundColor = "red";
@@ -33,7 +32,6 @@
             }
             if(yourEmail.value != ""){
                 inputEmail.style.backgroundColor = "lightblue";
-                i = 0;
             }
             if(yourMessage.value == ""){
                 inputMessage.style.borderColor = "red";
@@ -42,10 +40,11 @@
             }
             if(yourMessage.value != ""){
                 inputMessage.style.borderColor = "lightblue";
+            }
+            if(yourName.value != "" && yourEmail.value != "" && yourMessage.value != ""){
                 i = 0;
             }
             if(i == 1){
-                i = 0;
                 return false;
             }
         }  

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website CONTACT</title>
+    <link rel="stylesheet" href="stylesContact.css">
+    <script>
+        function validateForm() {
+            var yourName = document.getElementById("contact-field-name");
+            var yourEmail = document.getElementById("contact-field-email");
+            var yourPhone = document.getElementById("contact-field-phone");
+            var yourMessage = document.getElementById("contact-field-textarea");
+            var inputName = document.getElementById("input-name");
+            var inputEmail = document.getElementById("input-email");
+            var inputMessage = document.getElementById("contact-field-textarea");
+            var i;
+
+            if(yourName.value == ""){
+                inputName.style.backgroundColor = "red";
+                yourName.placeholder = "PLEASE ENTER YOUR NAME";
+                i = 1;
+            }
+            if(yourName.value != ""){
+                inputName.style.backgroundColor = "lightblue";
+            }
+            if(yourEmail.value == ""){
+                inputEmail.style.backgroundColor = "red";
+                yourEmail.placeholder = "PLEASE ENTER YOUR E-MAIL";
+                i = 1;
+            }
+            if(yourEmail.value != ""){
+                inputEmail.style.backgroundColor = "lightblue";
+            }
+            if(yourMessage.value == ""){
+                inputMessage.style.borderColor = "red";
+                yourMessage.placeholder = "PLEASE ENTER YOUR MESSAGE";
+                i = 1;
+            }
+            if(yourMessage.value != ""){
+                inputMessage.style.borderColor = "lightblue";
+            }
+            if(yourName.value != "" && yourEmail.value != "" && yourMessage.value != ""){
+                i = 0;
+            }
+            if(i == 1){
+                return false;
+            }
+        }  
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-wrapper">
+                <div class="title">
+                    <a class="title-name" href="index.html" rel="home">Inanc Alp Gunalp</a>
+                </div>
+                <div class="flex-navbar">
+                    <div class="flex-navbar-item mainpage">
+                        <a href="index.html">Main Page</a>
+                    </div>
+                    <div class="flex-navbar-item projectpage">
+                        <a href="project.html">Project Page</a>
+                    </div>
+                    <div class="flex-navbar-item resumepage">
+                        <a href="resume.html">Resume Page</a>
+                    </div>        
+                    <div class="flex-navbar-item contactpage">
+                        <a href="contact.html">Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="flex-contact">
+                <div class="flex-contact-item left">
+                    <div class="left-phone">
+                        <p class="contact-caption">Phone</p>
+                        <p>+32 456 218 XXX</p>
+                    </div> 
+                    <hr>
+                    <div class="left-address">
+                        <p class="contact-caption">Address</p>
+                        <p>Jan Pieter de Nayerlaan 5, 2860 Sint-Katelijne-Waver</p>
+                    </div> 
+                    <hr>
+                    <div class="left-email">
+                        <p class="contact-caption">E-mail</p>
+                        <p>inancgunalp@gmail.com</p>
+                    </div>
+                    <hr> 
+                    <div class="left-links">
+                        <a href="#">- Facebook</a> 
+                        <a href="#">- Instagram</a>
+                        <a href="#">- LinkedIn</a>
+                    </div> 
+                </div>
+                <div class="flex-contact-item right">  
+                     <!--FORM-->
+                    <form name="yourForm" onsubmit="return validateForm()" action="mailto:inangunalp@gmail.com?subject=Contact" method="post" enctype="text/plain">
+                        <div class="right-caption">
+                            <p>Contact Me!</p>
+                        </div>
+                        <div class="right-input" id="input-name">
+                            <input name="yourName" id="contact-field-name" class="contact-field" type="text" placeholder="Your Name">
+                        </div>
+                        <div class="right-input" id="input-email">
+                            <input name="yourEmail" id="contact-field-email" class="contact-field" type="email" placeholder="Your E-Mail">
+                        </div>
+                        <div class="right-input">
+                            <input name="yourPhone" id="contact-field-phone" class="contact-field" type="tel" placeholder="Your Phone">
+                        </div>
+                        <div class="right-input-textarea">
+                            <textarea name="yourMessage" id="contact-field-textarea" class="contact-field" placeholder="Your Message" rows="12"></textarea>
+                        </div>
+                        <input id="submit-button" class="contact-field" type="submit" name="submit">
+                    </form>
+                    <!---->
+                </div>
+            </div>  
+        </main>
+    </div>
+</body>
+</html>

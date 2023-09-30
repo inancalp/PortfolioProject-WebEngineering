@@ -1,0 +1,128 @@
+*{
+    background-color: whitesmoke;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold; 
+    font-size: 14px;
+    color: black;
+    text-decoration: none;
+}
+.wrapper{
+    max-width: 1200px;
+    min-width: 900px;
+    margin: auto;
+}
+header {
+    position: relative;
+    top: 8px;
+}
+div{
+    margin: 4px; 
+}
+a{  
+    transition: all 0.3s ease 0s;
+}
+a:hover{
+    color: lightskyblue;
+}
+.footer-container{
+    border: 1px solid black;
+    padding: 4px;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.header-wrapper{
+    background-color: lightblue;
+    border: 1px solid black;
+    padding: 4px;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px black solid;
+    padding: 10px;
+}
+    .title-name{
+        font-size: 36px;
+        margin:15px;
+    }
+.flex-navbar{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+    padding: 4px;
+}
+    .flex-navbar-item{
+        border: 1px solid black;
+        padding: 4px;
+        text-align: center;
+    }
+    .flex-navbar a{
+    font-size: 13px;
+    }  
+
+
+/* CONTENT */
+
+
+.flex-resume-main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 94%;
+    margin: auto;
+    margin-top: 48px;
+    margin-bottom: 48px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px;
+}
+    .description{
+        margin: 40px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        flex-basis: 0;
+        flex-grow: 1;
+    }   
+        .description img{
+            border-radius: 50%;
+            border: 3px solid black;
+            margin-top: 32px;
+            margin-right: 30px;
+            width: 140px;
+            float: left;
+        }
+        .description p{
+            line-height: 200%;
+            margin: 30px;
+            font-size:small;
+        }
+    .details{
+        width: 95%;
+        flex-basis: 0;
+        flex-grow: 3;
+        margin-top: 10px;
+        margin-bottom: 20px;
+        line-height: 1.6;
+    }   
+        .details h1{
+            width: fit-content;
+            padding-left:8px;
+            font-weight: bolder;
+        }
+        .details li{
+            font-size: smaller;
+            padding-bottom: 4px;
+        }
+        .details .caption{
+            font-style: italic;
+            font-size:small;
+            padding-top: 4px;
+        }
+        .edu{
+            float: right; 
+            margin: 30px;
+            padding: 8px;
+        }
+

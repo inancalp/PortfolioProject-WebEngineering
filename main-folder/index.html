@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website INDEX</title>
+    <link rel="stylesheet" href="stylesIndex.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+        function callImages(){
+            someVibesLength = 101;
+        showPhotos = "";
+        photosDiv = document.getElementById("photosDiv");
+        for (i=1; i <= someVibesLength; i++) {
+            showPhotos += `<img class="someVibes" src="../some-vibes-resized/IMG (${i}).jpg" alt="IMG (${i})"/>`;
+        }
+        photosDiv.innerHTML = showPhotos;
+        }
+    </script>
+    <script>
+        $(document).ready(function(){
+            
+            $(".someVibes").click(function(){
+                var path = $(this).attr("src");
+                $("#someParagh").html(`<img src="${path}" alt='largeVibes'>`);
+                $("#photos-popUp").fadeIn();
+            });
+
+            $("#close-popUp").click(function(){
+                $("#photos-popUp").fadeOut();
+            });
+        });
+    </script>   
+</head>
+<body onLoad="callImages()">
+    <div class="wrapper">
+        <header>
+            <div class="header-wrapper">
+                <div class="title">
+                    <a class="title-name" href="index.html" rel="home">Inanc Alp Gunalp</a>
+                </div>
+                <div class="flex-navbar">
+                    <div class="flex-navbar-item mainpage">
+                        <a href="index.html">Main Page</a>
+                    </div>
+                    <div class="flex-navbar-item projectpage">
+                        <a href="project.html">Project Page</a>
+                    </div>
+                    <div class="flex-navbar-item resumepage">
+                        <a href="resume.html">Resume Page</a>
+                    </div>        
+                    <div class="flex-navbar-item contactpage">
+                        <a href="contact.html">Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <!--POPUP!-->
+            <div id="photos-popUp">
+                <div id="inner-photos-popUp">
+                    <p><button id="close-popUp">X</button></p>
+                    <p id="someParagh"></p>
+                </div>
+            </div>
+            <!---->
+            <div class="flex-content">
+                <div class="flex-content-item flex-content-item-left">
+                    <h5>Hello, World!</h5>
+                    <p>It's Inanc.</p>
+                    <p>Here in this page I wanted to share with you "a couple" pictures that I have take!</p>
+                    <p>A bit of a poetry here:</p>
+                    <div style=" margin-left:24px; font-style: italic; font-weight:900;" class="poem">
+                    <p>Want to be able to use the power of the code;</p>
+                    <p>To achieve,</p>
+                    <p>To create,</p>
+                    <p>To express,</p>
+                    <p>To tell a story,</p>
+                    <p>To show a story,</p>
+                    <p>To talk,</p>
+                    <p>To listen,</p>
+                    <p>To be listened,</p>
+                    <p>To wake up for it,</p>
+                    <p>To sleep with it,</p>
+                    <p>To love every single line of it,</p>
+                    <p>And everything else!</p>
+                    <p>But most importantly,</p>
+                    <p>To feel free!</p>
+                    </div>
+                </div>
+                <div id="photosDiv" class="flex-content-item flex-content-item-right">    
+                </div>
+            </div>  
+        </main>
+    </div>
+</body>
+</html>

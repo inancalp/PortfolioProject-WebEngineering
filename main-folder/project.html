@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website PROJECT</title>
+    <link rel="stylesheet" href="stylesProject.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js" ></script>
+    <script>
+        $(document).ready(function(){
+            $(".next").on("click", function(){
+                var currentImg = $(".active");
+                var nextImg = currentImg.next();
+                if (nextImg.length){
+                    currentImg.css("display", "none");
+                    currentImg.removeClass("active");
+                    currentImg.addClass("notActive");
+                    nextImg.fadeIn(700);
+                    nextImg.removeClass("notActive");
+                    nextImg.addClass("active");
+                }
+            });
+            $(".prev").on("click", function(){
+                var currentImg = $(".active");
+                var prevImg = currentImg.prev();
+                if (prevImg.length){
+                    currentImg.css("display", "none");
+                    currentImg.removeClass("active");
+                    currentImg.addClass("notActive");
+                    prevImg.fadeIn(700);
+                    prevImg.removeClass("notActive");
+                    prevImg.addClass("active");
+                }
+            });
+        })   
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="header-wrapper">
+                <div class="title">
+                    <a class="title-name" href="index.html" rel="home">Inanc Alp Gunalp</a>
+                </div>
+                <div class="flex-navbar">
+                    <div class="flex-navbar-item mainpage">
+                        <a href="index.html">Main Page</a>
+                    </div>
+                    <div class="flex-navbar-item projectpage">
+                        <a href="project.html">Project Page</a>
+                    </div>
+                    <div class="flex-navbar-item resumepage">
+                        <a href="resume.html">Resume Page</a>
+                    </div>        
+                    <div class="flex-navbar-item contactpage">
+                        <a href="contact.html">Contact Page</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main>
+            <div class="flex-project">
+                <div class="flex-project-item bigLogo">
+                    <img src="images/background4.svg" alt="background (2).png">
+                </div>
+                <div class="flex-project-item description">
+                    <div class="inner-description">
+                        <p>
+                            “StudyON” is an interactive web application for students to input questions they have think of during class or in their study sessions. With creating their study groups and the specified courses in it, they will challenge each other for to have as much as right answers possible from the questions they have created for each other. With the questions have been inputted which will vary as; multiple choice, true-false type and so on, they will try to earn points and rank up to earn badges or a choice of prize. Main goal of the application is to encourage students to use “active recall” technique and be more prepared for the upcoming exams.
+                        </p>
+                        <hr>
+                        <ul class="features">
+                            <li>
+                                <span class="features-captions">QuizON</span>
+                                <ul>
+                                    <li>When a question is added, it will appear in the releated course’s QuizON page.</li>
+                                    <li>Don’t wait too long to solve the questions though!</li>
+                                    <li>Questions will disappear after a while, like a week or so. </li>
+                                    <li>Which means, chance to earn points from the questions will also disappear...</li>
+                                    <li>But no need to worry xxx-tra much! The question will have its place in QuestionBank for the whole study group when it is deleted from QuizON portion of the application.</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <span class="features-captions">StudyCHAT</span>
+                                <ul>
+                                    <li>Chat room for our fellow students.</li>
+                                </ul>
+                            </li>
+                            <li> 
+                                <span class="features-captions">RepeatON</span>
+                                <ul>
+                                    <li>Did you find the question interesting and want to work on it again later? Add it to the “RepeatON” feature!</li>
+                                </ul>
+                            </li>
+                            <li class="credits">"StudyON" by Inanc Alp Gunalp
+                                <ul>
+                                    <li>ICT - Application Development</li>
+                                    <li>1st phase</li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- jQuery SLIDESHOW -->
+                <div class="flex-project-item slideshow">
+                    <div class="button left"><button class="prev" >&lt;&lt;</button></div>
+                    <div class="slider">
+                        <img src="StudyON-screenshots/IMG1.png" alt="img1" class="active">
+                        <img src="StudyON-screenshots/IMG2.png" alt="img2" class="notActive">
+                        <img src="StudyON-screenshots/IMG3.png" alt="img3" class="notActive">
+                        <img src="StudyON-screenshots/IMG4.png" alt="img4" class="notActive">
+                        <img src="StudyON-screenshots/IMG5.png" alt="img5" class="notActive">
+                        <img src="StudyON-screenshots/IMG6.png" alt="img6" class="notActive">
+                        <img src="StudyON-screenshots/IMG7.png" alt="img7" class="notActive">
+                        <img src="StudyON-screenshots/IMG8.png" alt="img8" class="notActive">
+                        <img src="StudyON-screenshots/IMG9.png" alt="img9" class="notActive">
+                        <img src="StudyON-screenshots/IMG10.png" alt="img10" class="notActive">
+                        <img src="StudyON-screenshots/IMG11.png" alt="img11" class="notActive">
+                        <img src="StudyON-screenshots/IMG12.png" alt="img12" class="notActive">
+                    </div>
+                    <div class="button right"><button class="next" >>></button></div>
+                </div>
+                <!---->
+                <div class="flex-project-item blockdiagram">
+                    <img src="images/0-BlockDiagram.png" alt="">
+                </div>
+            </div>
+        </main>
+        <footer style="font-size:larger;font-weight:bolder;text-align:center;">
+                <div class="footer-container text">
+                    <p>"Copyright © Thomas More Mechelen-Antwerp vzw - Campus 
+                        De Nayer - Professional bachelor electronics-ict - 2021" </p>
+                </div>
+        </footer>
+    </div>
+</body>
+</html>

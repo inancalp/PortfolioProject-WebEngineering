@@ -7,7 +7,7 @@ This is my initial portfolio website, created as part of the 'Web Engineering' c
 - CV.
 - Practice Enterprise 1 Project.
     - Presentation and details.
-    - You can find the GitHub repository for the project at the following link: [link_here](https://github.com/inancalp/StudyON-PracticeEnterprise1).
+    - You can access the repository by clicking [here](https://github.com/inancalp/StudyON-PracticeEnterprise1).
 - Contact Page.
 
 ## Technologies Used

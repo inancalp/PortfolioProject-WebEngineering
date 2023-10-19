@@ -16,4 +16,4 @@ This is my initial portfolio website, created as part of the 'Web Engineering' c
 - JavaScript & jQuery 
 
 ## How to Run the Project
-My recomended way is to run the project with LiveServer extension for VSCode IDE.
+My recomended way is to run the project with using LiveServer extension for VSCode IDE, starting from "index.html".

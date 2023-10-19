@@ -3,7 +3,7 @@ This is my initial portfolio website, created as part of the 'Web Engineering' c
 
 ## Features
 - Main Page.
-    - Includes a collection of images captured during my travels and a bit of poetry.
+    - Includes a collection of images captured during my travels.
 - CV.
 - Practice Enterprise 1 Project.
     - Presentation and details.
